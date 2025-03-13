@@ -2,35 +2,147 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>Portfolio Resume</title>
     <style>
         body {
-            /*background-image: url('./img/cat.jpg');*/
+            background-image: url('./img/cat.jpg');
             font-family: Arial, sans-serif;
             background-repeat: repeat;
             margin: 0;
             padding: 20px;
-            background-size:22%;
+            background-size:22%
         }
-
+        .container {
+            width: 80%;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background: cadetblue;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .content {
+            display: flex;
+            margin-top: 20px;
+        }
+        .sidebar {
+            width: 30%;
+            background: #dadada;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .profile-img {
+            width: 100px;
+            border-radius: 6%;
+            display: block;
+            margin-right : auto;
+        }
+        .contact, .skills {
+            margin-bottom: 20px;
+        }
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills li {
+            margin: 5px 0;
+        }
+        .main-content {
+            width: 65%;
+            margin-left: 5%;
+        }
+        .about, .experience, .education, .projects {
+            margin-bottom: 20px;
+        }
+        .projects ul {
+            list-style: none;
+            padding: 0;
+        }
+        .projects a {
+            text-decoration: none;
+            color: rgb(15, 184, 128);
+        }
+        .projects a:hover {
+            font-size: 1.1em;
+            background-color: rgb(148, 84, 190);
+            color: rgb(15, 184, 128);
+            padding: 5px;
+            border-radius: 5px;
+        }
+        ol.a {list-style-type:katakana;}
+        .p {
+            color: red;
+        }
+        h2{
+            color: black;
+        }
+        .hover-hide:hover {
+            visibility: hidden;
+        }
+        .x{
+            color:rgb(15, 184, 128)
+        }
+        
     </style>
-
-
-
 </head>
 <body>
-    <table border="1px">
-        <tr>
-            <td>Francisco Valentino</td>
-            <td rowspan="2"></td>
-        </tr>
-        <tr>
-            <td>Contact</td>
-            <td>About me</td>
-        </tr>
-    </table>
-
+    <div class="container">
+        <div class="header">
+            <h1>Francisco Valentino</h1>
+            <p>Web Developer | UI/UX Designer</p>
+        </div>
+        <div class="content">
+            <div class="sidebar">
+                <img src="./img/ryan.png" alt="John Doe" class="profile-img">
+                <div class="contact">
+                    <h2>Contact</h2>
+                    <p><strong>Email:</strong> <def class="p"><span class="email">johndoe@example.com</span></def></p>
+                    <p><strong>NRP:</strong> <def class="p"> "2472040"</def></p>
+                    <p><strong>Nama:</strong> <def class="p"> "Francisco Valentino"</def></p>
+                </div>
+                <div class="skills">
+                    <h2>Skills</h2>
+                    <ol class="a">
+                        <li>HTML & CSS - ★★★★★</li>
+                        <li>JavaScript - ★★★★☆</li>
+                        <li>Python - ★★★☆☆</li>
+                        <li>UI/UX Design - ★★★★★</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="about">
+                    <h2>About Me</h2>
+                    <p>I am a passionate web developer with experience in building responsive websites and interactive user interfaces.</p>
+                </div>
+                <div class="experience">
+                    <h2>Experience</h2>
+                    <p><strong>Frontend Developer </strong>- ABC Tech (2022-Present)</p>
+                    <ol class="a">
+                        <li>Developed responsive web applications.</li>
+                        <li>Optimized UI performance for better user experience.</li>
+                    </ol>
+                </div>
+                <div class="education">
+                    <h2>Education</h2>
+                    <p><strong>Bachelor’s in Computer Science</strong> - <span class="hover-hide"><def class="p"> Maranatha Christian University</span></def> (2018-2022)</p>
+                </div>
+                <div class="projects">
+                    <h2>My Projects</h2>
+                    <ol class="a">
+                        <li><strong><a href="https://github.com/2472040/Praktikum02.git">Project 1: AI Chatbot</a></strong></li>
+                        <li><strong><a href="https://github.com/2472040/Praktikum-3.git">Project 2: E-commerce Website</a></strong></li>
+                        <li><strong><a href="https://github.com/2472040/Praktikum-4.git">Project 3: Portfolio Website</a></strong></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
